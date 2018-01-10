@@ -18,6 +18,24 @@ namespace EntityFramework.CodeFirst.DbViews
             _pathToDirectoryWithSqlScript = pathToDirectoryWithSqlScript;
         }
 
+        public MigrateDatabaseToLatestVersionDbViewsSupport(string connectionStringName,
+            string pathToDirectoryWithSqlScript) : base(connectionStringName)
+        {
+            _pathToDirectoryWithSqlScript = pathToDirectoryWithSqlScript;
+        }
+
+        public MigrateDatabaseToLatestVersionDbViewsSupport(bool useSuppliedContext,
+            string pathToDirectoryWithSqlScript) : base(useSuppliedContext)
+        {
+            _pathToDirectoryWithSqlScript = pathToDirectoryWithSqlScript;
+        }
+
+        public MigrateDatabaseToLatestVersionDbViewsSupport(bool useSuppliedContext, TMigrationsConfiguration configuration,
+            string pathToDirectoryWithSqlScript) : base(useSuppliedContext, configuration)
+        {
+            _pathToDirectoryWithSqlScript = pathToDirectoryWithSqlScript;
+        }
+
         public override void InitializeDatabase(TContext context)
         {
             var dbExists = context.Database.Exists();
