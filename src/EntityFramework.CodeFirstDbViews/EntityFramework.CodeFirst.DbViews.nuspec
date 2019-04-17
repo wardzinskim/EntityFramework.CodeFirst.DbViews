@@ -6,12 +6,16 @@
     <title>$title$</title>
     <authors>wardzinskim</authors>
     <owners>wardzinskim</owners>
-    <licenseUrl>https://github.com/wardzinskim/EntityFramework.CodeFirst.DbViews/blob/master/LICENSE</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/wardzinskim/EntityFramework.CodeFirst.DbViews</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>db views support for Entity Framework Code First</description>
     <releaseNotes>First release</releaseNotes>
-    <copyright>Copyright 20189/copyright>
+    <copyright>Copyright 2019</copyright>
     <tags>EntityFramework CodeFirst DbView</tags>
   </metadata>
+  <files>
+    <!-- Add a readme -->
+    <file src="../../Readme.md" target="" />
+  </files>
 </package>
